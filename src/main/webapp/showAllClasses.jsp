@@ -7,8 +7,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+th, td {
+  padding: 15px;
+  text-align: left;
+  
+}
+</style>
 <meta charset="ISO-8859-1">
-<title>Add Class Information ...</title>
+<title>Class Information ...</title>
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <header>
@@ -16,6 +23,8 @@
 </header>
 <body>
 <table border="1">
+  <caption><h1>Classes Information</h1></caption>
+
 	<tr>
 		<th>Class ID</th> 
 		<th>Subject ID</th>

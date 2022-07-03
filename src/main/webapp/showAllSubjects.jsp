@@ -7,6 +7,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+th, td {
+  padding: 15px;
+  text-align: left;
+  
+}
+</style>
 <meta charset="ISO-8859-1">
 <title>All Subjects</title>
 </head>
@@ -15,11 +22,12 @@
 </header>
 <body>
 <table border="1">
+  <caption><h1>Subjects Offered</h1></caption>
+
 	<tr>
 		<th>Subject ID</th> 
 		<th>Subject</th>
 		<th>Description</th> 
-		<th>Actions</th> 
 	
 	</tr>
 	<core:forEach items="${sessionScope.listOfSubject}" var="sub">
@@ -28,10 +36,7 @@
     	<td><core:out value="${sub.subject}"></core:out>
     	<td><core:out value="${sub.description}"></core:out>
     	<form action="MyServlet" method="post">
-       <td> <a value="Edit" name="Action"
-            href="edit.jsp?id=${sub.subjectId} ">Edit</a> <input
-            type="hidden" name="j" value="${sub.subjectId}">&nbsp;&nbsp;&nbsp;
-            <a href="delete.jsp">Delete</a>&nbsp;&nbsp;&nbsp;</td>
+       
 	</tr>
 </core:forEach>
 

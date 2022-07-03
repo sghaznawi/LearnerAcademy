@@ -7,14 +7,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+th, td {
+  padding: 15px;
+  text-align: left;
+  
+}
+</style>
 <meta charset="ISO-8859-1">
-<title>Add Teacher Information ...</title>
+<title> Teacher Information ...</title>
 </head>
 <header>
 	<%@include file="menu.jsp" %>
 </header>
 <body>
 <table border="1">
+  <caption><h1>Teachers Information</h1></caption>
+
 	<tr>
 		<th>Teacher ID</th> 
 		<th>Name</th>

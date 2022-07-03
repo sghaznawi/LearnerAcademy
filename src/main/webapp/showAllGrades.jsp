@@ -7,6 +7,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+th, td {
+  padding: 15px;
+  text-align: left;
+  
+}
+</style>
 <meta charset="ISO-8859-1">
 <title>Students Grades</title>
 </head>
@@ -15,6 +22,8 @@
 </header>
 <body>
 <table border="1">
+  <caption><h1>Students Grades Sheet</h1></caption>
+
 	<tr>
 		<th>Student ID</th> 
 		<th>Class ID</th>

@@ -15,7 +15,7 @@ public class DetailsDao {
 		List<Details> listDetails = new ArrayList<Details>();
 		try {
 			Connection con = DbResource.getDbConnection();
-			PreparedStatement pstmt = con.prepareStatement("select * from details");
+			PreparedStatement pstmt = con.prepareStatement("select * from details ORDER BY class_id, final_grade desc");
 			ResultSet rs = pstmt.executeQuery();
 			while(rs.next()) {
 				Details dt = new Details();

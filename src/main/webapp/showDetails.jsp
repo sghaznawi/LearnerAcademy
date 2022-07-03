@@ -4,10 +4,18 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="core" %>
+
 <!DOCTYPE html>
+
 <html>
 <head>
-<link href="css/stle.css" type="text/css" rel="stylesheet" />
+<style>
+th, td {
+  padding: 15px;
+  text-align: left;
+  
+}
+</style>
    <meta charset="ISO-8859-1">
 <title>Class Information ...</title>
 </head>
@@ -17,6 +25,8 @@
 <body>
 
 <table border="1">
+  <caption><h1>Detailed Classes Report</h1></caption>
+
 	<tr>
 		<th>Class ID</th> 
 		<th>Room Number</th>
